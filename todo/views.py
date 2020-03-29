@@ -16,7 +16,7 @@ def create_an_item(request):
             form.save()
             return redirect(get_todo_list)
     else:
-        form= ItemForm()
+        form = ItemForm()
 
     return render(request, 'item_form.html', {'form': form})
 
